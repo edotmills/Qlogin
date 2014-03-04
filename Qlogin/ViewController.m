@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "QApi.h"
+#import "Tracker.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     NSLog(@"Q::%@",[QApi login:@"skinnymills@gmail.com" password:@"jaXson77"]);
+    
+    Tracker *tracker = [[Tracker sharedTracker]init];
 }
 
 - (void)didReceiveMemoryWarning

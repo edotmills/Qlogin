@@ -22,6 +22,8 @@
 		5F32269C18C4C54B00A53E75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F32269A18C4C54B00A53E75 /* InfoPlist.strings */; };
 		5F32269E18C4C54B00A53E75 /* QloginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F32269D18C4C54B00A53E75 /* QloginTests.m */; };
 		5F3226A918C4C5A100A53E75 /* QApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3226A818C4C5A100A53E75 /* QApi.m */; };
+		5F3226AC18C6891500A53E75 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3226AB18C6891500A53E75 /* Tracker.m */; };
+		5F3226AE18C6895500A53E75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3226AD18C6895500A53E75 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		5F32269D18C4C54B00A53E75 /* QloginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QloginTests.m; sourceTree = "<group>"; };
 		5F3226A718C4C5A100A53E75 /* QApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QApi.h; sourceTree = "<group>"; };
 		5F3226A818C4C5A100A53E75 /* QApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QApi.m; sourceTree = "<group>"; };
+		5F3226AA18C6891500A53E75 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		5F3226AB18C6891500A53E75 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
+		5F3226AD18C6895500A53E75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F3226AE18C6895500A53E75 /* CoreLocation.framework in Frameworks */,
 				5F32267518C4C54B00A53E75 /* CoreGraphics.framework in Frameworks */,
 				5F32267718C4C54B00A53E75 /* UIKit.framework in Frameworks */,
 				5F32267318C4C54B00A53E75 /* Foundation.framework in Frameworks */,
@@ -104,6 +110,7 @@
 		5F32267118C4C54B00A53E75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F3226AD18C6895500A53E75 /* CoreLocation.framework */,
 				5F32267218C4C54B00A53E75 /* Foundation.framework */,
 				5F32267418C4C54B00A53E75 /* CoreGraphics.framework */,
 				5F32267618C4C54B00A53E75 /* UIKit.framework */,
@@ -124,6 +131,8 @@
 				5F32267918C4C54B00A53E75 /* Supporting Files */,
 				5F3226A718C4C5A100A53E75 /* QApi.h */,
 				5F3226A818C4C5A100A53E75 /* QApi.m */,
+				5F3226AA18C6891500A53E75 /* Tracker.h */,
+				5F3226AB18C6891500A53E75 /* Tracker.m */,
 			);
 			path = Qlogin;
 			sourceTree = "<group>";
@@ -204,6 +213,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = westmason;
 				TargetAttributes = {
+					5F32266E18C4C54B00A53E75 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					5F32268F18C4C54B00A53E75 = {
 						TestTargetID = 5F32266E18C4C54B00A53E75;
 					};
@@ -256,6 +272,7 @@
 			files = (
 				5F3226A918C4C5A100A53E75 /* QApi.m in Sources */,
 				5F32268918C4C54B00A53E75 /* ViewController.m in Sources */,
+				5F3226AC18C6891500A53E75 /* Tracker.m in Sources */,
 				5F32268318C4C54B00A53E75 /* AppDelegate.m in Sources */,
 				5F32267F18C4C54B00A53E75 /* main.m in Sources */,
 			);
